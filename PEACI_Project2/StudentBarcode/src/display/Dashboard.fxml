@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="927.0" prefWidth="1650.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.DashboardController">
+    
+    <!-- Background Image -->
+    <ImageView fitHeight="1050.0" fitWidth="1650.0" layoutY="-2.0" opacity="0.5" pickOnBounds="true" preserveRatio="true">
+        <image>
+            <Image url="@..//imagesbg/PeaciBuilding.jpg" />
+        </image>
+    </ImageView>
+    
+    <!-- Logo -->
+    <ImageView fitHeight="503.0" fitWidth="465.0" layoutX="1032.0" layoutY="204.0" pickOnBounds="true" preserveRatio="true">
+        <image>
+            <Image url="@..//imagesbg/logo.png" />
+        </image>
+    </ImageView>
+    
+    <!-- Welcome Labels -->
+    <Label layoutX="93.0" layoutY="222.0" text="Welcome to Philippines">
+        <font>
+            <Font name="Arial Bold" size="80.0" />
+        </font>
+    </Label>
+    
+    <Label layoutX="93.0" layoutY="372.0" text="Engineering and">
+        <font>
+            <Font name="Arial Bold" size="80.0" />
+        </font>
+    </Label>
+    
+    <Label layoutX="93.0" layoutY="534.0" text="Agro-Industrial College, Inc.">
+        <font>
+            <Font name="Arial Bold" size="80.0" />
+        </font>
+    </Label>
+    
+    <!-- Hidden Barcode Field -->
+    <TextField fx:id="hiddenBarcodeField" layoutX="-1000" layoutY="-1000" onKeyReleased="#handleKeyInput" />
+</AnchorPane>

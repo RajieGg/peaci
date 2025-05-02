@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Rectangle2D?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="919.0" prefWidth="1650.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.StudentController">
+   <children>
+      <ImageView fitHeight="922.0" fitWidth="1626.0" layoutX="28.0" layoutY="1.0" opacity="0.5" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../imagesbg/PeaciBuilding.jpg" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="521.0" fitWidth="560.0" layoutX="921.0" layoutY="77.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../imagesbg/logo.png" />
+         </image>
+      </ImageView>
+      <Pane layoutX="178.0" layoutY="89.0" prefHeight="650.0" prefWidth="590.0" style="-fx-background-color: white; -fx-border-color: black; -fx-border-radius: 30; -fx-background-radius: 30;">
+         <children>
+            <ImageView fx:id="studentImageView" fitHeight="268.0" fitWidth="430.0" layoutX="94.0" layoutY="51.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../images/default.jpg" />
+               </image>
+               <viewport>
+                  <Rectangle2D />
+               </viewport>
+               <effect>
+                  <DropShadow radius="14.68" width="39.72" />
+               </effect>
+            </ImageView>
+            <Label fx:id="nameLabel" layoutX="59.0" layoutY="353.0" style="-fx-text-decoration-line: underline;"  underline="true">
+               <font>
+                  <Font name="Arial Black" size="35.0" />
+               </font>
+            </Label>
+            <Label fx:id="courseLabel" layoutX="65.0" layoutY="420.0" style="-fx-text-decoration-line: underline;"  underline="true">
+               <font>
+                  <Font name="Arial Black" size="40.0" />
+               </font>
+            </Label>
+            <Label fx:id="idLabel" layoutX="169.0" layoutY="486.0"  underline="true">
+               <font>
+                  <Font name="Arial Black" size="44.0" />
+               </font>
+            </Label>
+         </children>
+      </Pane>
+      <Label layoutX="840.0" layoutY="632.0" style="-fx-font-family: inter;" text="Welcome to Philippines Engineering">
+         <font>
+            <Font name="Arial Bold" size="43.0" />
+         </font>
+      </Label>
+      <Label layoutX="875.0" layoutY="705.0" text="and Agro-Industrial College, Inc.">
+         <font>
+            <Font name="Arial Bold" size="43.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>

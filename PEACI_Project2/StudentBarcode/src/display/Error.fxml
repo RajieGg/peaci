@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Rectangle2D?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?> 
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="928.0" prefWidth="1630.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.StudentController">
+   <children>
+      <ImageView fitHeight="1050.0" fitWidth="1650.0" layoutX="-22.0" layoutY="1.0" opacity="0.5" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../imagesbg/PeaciBuilding.jpg" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="521.0" fitWidth="560.0" layoutX="1011.0" layoutY="84.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../imagesbg/logo.png" />
+         </image>
+      </ImageView>
+      <Pane layoutX="178.0" layoutY="89.0" prefHeight="650.0" prefWidth="590.0" style="-fx-background-color: white; -fx-border-color: black; -fx-border-radius: 30; -fx-background-radius: 30;">
+         <children>
+            <ImageView fx:id="studentImageView" fitHeight="268.0" fitWidth="430.0" layoutX="94.0" layoutY="51.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="" />
+               </image>
+               
+               <viewport>
+                  <Rectangle2D />
+               </viewport>
+            </ImageView>
+            <Label fx:id="nameLabel" layoutX="59.0" layoutY="353.0" style="-fx-text-decoration-line: underline;" underline="true">
+               <font>
+                  <Font name="Arial Black" size="35.0" />
+               </font>
+            </Label>
+            <Label fx:id="courseLabel" layoutX="35.0" layoutY="423.0" style="-fx-text-decoration-line: underline;"  underline="true">
+               <font>
+                  <Font name="Arial Black" size="35.0" />
+               </font>
+            </Label>
+            <Label fx:id="idLabel" layoutX="169.0" layoutY="486.0"  underline="true">
+               <font>
+                  <Font name="Arial Black" size="44.0" />
+               </font>
+            </Label>
+            <Pane layoutX="240.0" layoutY="272.0" prefHeight="157.0" prefWidth="732.0" style="-fx-background-color: red; -fx-background-radius: 10;">
+               <children>
+                  <Line endX="71.4000244140625" endY="118.800048828125" layoutX="208.0" layoutY="24.0" startX="71.4000244140625" startY="-11.4000244140625" />
+                  <Label layoutX="38.0" layoutY="48.0" text="INVALID" textFill="#fafafa">
+                     <font>
+                        <Font name="Arial Bold" size="53.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="297.0" layoutY="29.0" text="EXPIRE YOUR I.D" textFill="WHITE">
+                     <font>
+                        <Font name="Arial Bold" size="38.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="297.0" layoutY="91.0" text="PLEASE RENEW YOUR I.D" textFill="WHITE">
+                     <font>
+                        <Font name="Arial Bold" size="31.0" />
+                     </font>
+                  </Label>
+               </children>
+            </Pane>
+         </children>
+      </Pane>
+      <Label layoutX="820.0" layoutY="632.0" style="-fx-font-family: inter;" text="Welcome to Philippines Engineering">
+         <font>
+            <Font name="Arial Bold" size="43.0" />
+         </font>
+      </Label>
+      <Label layoutX="860.0" layoutY="695.0" text="and Agro-Industrial College, Inc.">
+         <font>
+            <Font name="Arial Bold" size="43.0" />
+         </font>
+      </Label>
+      <ImageView fitHeight="184.0" fitWidth="217.0" layoutX="667.0" layoutY="193.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../imagesbg/error.png" />
+         </image>
+      </ImageView>
+   </children>
+</AnchorPane>

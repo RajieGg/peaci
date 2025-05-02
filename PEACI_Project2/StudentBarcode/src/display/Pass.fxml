@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Rectangle2D?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="931.0" prefWidth="1650.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.PassController">
+   <children>
+      <ImageView fitHeight="1050.0" fitWidth="1650.0" layoutX="-22.0" layoutY="1.0" opacity="0.5" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../imagesbg/PeaciBuilding.jpg" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="521.0" fitWidth="560.0" layoutX="1011.0" layoutY="84.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../imagesbg/logo.png" />
+         </image>
+      </ImageView>
+      <Pane layoutX="178.0" layoutY="89.0" prefHeight="650.0" prefWidth="590.0" style="-fx-background-color: white; -fx-border-color: black; -fx-border-radius: 30; -fx-background-radius: 30;">
+         <children>
+            <ImageView fx:id="studentImageView" fitHeight="268.0" fitWidth="430.0" layoutX="94.0" layoutY="51.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@/images/4.jpg" />
+               </image>
+               <viewport>
+                  <Rectangle2D />
+               </viewport>
+            </ImageView>
+            <Label fx:id="nameLabel" contentDisplay="CENTER" layoutX="129.0" layoutY="353.0" style="-fx-text-decoration-line: underline;"  underline="true">
+               <font>
+                  <Font name="Arial Black" size="35.0" />
+               </font>
+            </Label>
+            <Label fx:id="courseLabel" layoutX="35.0" layoutY="423.0" style="-fx-text-decoration-line: underline;" underline="true">
+               <font>
+                  <Font name="Arial Black" size="35.0" />
+               </font>
+            </Label>
+            <Label fx:id="idLabel" layoutX="169.0" layoutY="486.0" underline="true">
+               <font>
+                  <Font name="Arial Black" size="44.0" />
+               </font>
+            </Label>
+            <Pane layoutX="360.0" layoutY="310.0" prefHeight="139.0" prefWidth="643.0" style="-fx-background-color: #23c828; -fx-background-radius: 10;">
+               <children>
+                  <Line endX="100.0" endY="44.5999755859375" layoutX="78.0" layoutY="82.0" startX="100.0" startY="-68.20001220703125" />
+                  <Label fx:id="statusLabel" layoutX="39.0" layoutY="17.0" text="IN" textFill="WHITE">
+                     <font>
+                        <Font name="Arial Bold" size="91.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="timeLabel" layoutX="198.0" layoutY="17.0" text="Time:" textFill="WHITE">
+                     <font>
+                        <Font name="Arial Bold" size="43.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="dateLabel" layoutX="198.0" layoutY="70.0" text="Date:" textFill="WHITE">
+                     <font>
+                        <Font name="Arial Bold" size="42.0" />
+                     </font>
+                  </Label>
+               </children>
+            </Pane>
+         </children>
+      </Pane>
+      <Label layoutX="820.0" layoutY="632.0" style="-fx-font-family: inter;" text="Welcome to Philippines Engineering">
+         <font>
+            <Font name="Arial Bold" size="43.0" />
+         </font>
+      </Label>
+      <Label layoutX="860.0" layoutY="696.0" text="and Agro-Industrial College, Inc.">
+         <font>
+            <Font name="Arial Bold" size="43.0" />
+         </font>
+      </Label>
+      <ImageView fx:id="checkImageView" fitHeight="146.0" fitWidth="153.0" layoutX="762.0" layoutY="275.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../imagesbg/check.png" />
+         </image>
+      </ImageView>
+   </children>
+</AnchorPane>
